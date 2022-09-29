@@ -1,6 +1,5 @@
 .single-card{
     height: 500px;
-    border: 1px solid white;
     border-radius: 10px;
     background-color: white;
     position: relative;
@@ -18,9 +17,14 @@
     color: white;
     font-weight: bold;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
 }
 .btn-addList:hover{
     background-color: darkgrey;
 }
 
+@media screen and (max-width:959px) {
+    .single-card{
+        height: 600px;
+    }
+}

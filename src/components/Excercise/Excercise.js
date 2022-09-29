@@ -16,19 +16,19 @@ const Excercise = () => {
         <div className='excercise'>
             <div className="excercise-container">
                 <div className='container'>
-                <Header></Header>
+                    <Header></Header>
 
-                <div>
-                    <h2>Select today's exercise</h2>
-                </div>
+                    <div>
+                        <h2>Select today's exercise</h2>
+                    </div>
 
-                <div className='card-container'>
-                {
-                    cards.map(card => <ExcerciseCard 
+                    <div className='card-container'>
+                        {
+                        cards.map(card => <ExcerciseCard 
                         key={card.id}
                         card={card}></ExcerciseCard>)
-                }
-                </div>
+                        }
+                    </div>
 
                 </div>
                 

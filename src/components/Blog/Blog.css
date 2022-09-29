@@ -1,0 +1,35 @@
+.blogs{
+  background-color: rgb(186, 194, 194);
+}
+.forBlog{
+    padding: 30px;
+    margin-bottom: 10px;
+    /* margin: auto;
+    width: 50%;
+    border: 3px solid rgb(92, 85, 85); */
+}
+.forBlog h1{
+  text-align: center;
+}
+.questionAnswer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border: 3px solid rgb(92, 85, 85);
+  padding: 20px;
+}
+.questionAnswer div{
+  padding-left: 20px;
+  text-align: justify;
+}
+@media screen and (max-width:667px) {
+  .questionAnswer{
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+  }
+}
+@media screen and (max-width:959px) {
+  .questionAnswer{
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+  }
+}

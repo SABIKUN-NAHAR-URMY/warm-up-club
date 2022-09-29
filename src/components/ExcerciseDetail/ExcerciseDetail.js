@@ -40,11 +40,11 @@ const ExcerciseDetail = () => {
 
             <div>
                 <h2>Excercise Details</h2>
-                <h3>Excercise time <span> </span></h3>
-                <h3>Break time <span> </span></h3>
+                <h3 className='excercise-time'>Excercise time <span> </span></h3>
+                <h3 className='break-time'>Break time <span> </span></h3>
             </div>
 
-            <button>Activity Completed</button>
+            <button className='activity-completed'>Activity Completed</button>
             
         </div>
     );

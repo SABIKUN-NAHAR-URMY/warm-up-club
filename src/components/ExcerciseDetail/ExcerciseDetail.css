@@ -17,3 +17,44 @@
     border-radius: 10px;
     background-color: rgb(234, 226, 251);
 }
+.addBreak{
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    background-color: rgb(234, 226, 251);
+}
+.addBreak p{
+    padding: 8px;
+    border-radius: 50px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+.addBreak p:hover{
+    background-color: #572dbb;
+    color: white;
+}
+.excercise-time{
+    padding: 20px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    background-color: rgb(234, 226, 251);
+}
+.break-time{
+    padding: 20px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    background-color: rgb(234, 226, 251);
+}
+.activity-completed{
+    margin-top: 20px;
+    margin-left: 30%;
+    background-color: #572dbb;
+    padding: 20px 30px 20px 30px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}

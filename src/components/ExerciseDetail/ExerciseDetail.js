@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import image from '../../images/img1.png';
-import './ExcerciseDetail.css'
+import './ExerciseDetail.css'
 
-const ExcerciseDetail = (props) => {
+const ExerciseDetail = (props) => {
     const[breakTime, setBreakTime] = useState([]);
 
     let sumTime = 0;
@@ -16,16 +16,17 @@ const ExcerciseDetail = (props) => {
   const handelClickBreak = (data) =>{
     const newData = data;
     setBreakTime(newData);
+    localStorage.setItem("Break-Time",newData);
   }
 
 
     const showToastMessage = () => {
-        toast.success('Success Notification !', {
+        toast.success('Congrates,Completed Your Exercise!!!', {
             position: toast.POSITION.TOP_RIGHT
         });
     };
     return (
-        <div className='excercise-detail'>
+        <div className='exercise-detail'>
             <div className='user'>
                 <img src={image} alt="" />
                 <div>
@@ -60,9 +61,9 @@ const ExcerciseDetail = (props) => {
             </div>
 
             <div>
-                <h2>Excercise Details</h2>
-                <h3 className='excercise-time'>Excercise time <span id='sumTime'>{sumTime} seconds</span></h3>
-                <h3 className='break-time'>Break time <span id='breakTime'>seconds</span></h3>
+                <h2>Exercise Details</h2>
+                <h3 className='exercise-time'>Exercise time <span id='sumTime'>{sumTime} seconds</span></h3>
+                <h3 className='break-time'>Break time <span id='breakTime'>{breakTime} seconds</span></h3>
             </div>
 
             <button  onClick={showToastMessage} className='activity-completed'>Activity Completed</button>
@@ -71,4 +72,4 @@ const ExcerciseDetail = (props) => {
     );
 };
 
-export default ExcerciseDetail;
+export default ExerciseDetail;

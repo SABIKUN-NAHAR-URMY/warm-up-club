@@ -1,7 +1,7 @@
 import React from 'react';
-import './ExcerciseCard.css';
+import './ExerciseCard.css';
 
-const ExcerciseCard = (props) => {
+const ExerciseCard = (props) => {
     const{img, name, detail, age, time} = props.card;
     return (
         <div className='single-card'>
@@ -17,4 +17,4 @@ const ExcerciseCard = (props) => {
     );
 };
 
-export default ExcerciseCard;
+export default ExerciseCard;

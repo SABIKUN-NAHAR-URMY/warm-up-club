@@ -1,8 +1,8 @@
-.excercise{
+.exercise{
     display: grid;
     grid-template-columns: 4fr 1.5fr;
 }
-.excercise-container{
+.exercise-container{
     background-color: rgb(234, 226, 251);
 }
 .container{
@@ -17,7 +17,7 @@
 }
 
 @media screen and (max-width:667px) {
-    .excercise{
+    .exercise{
         display: block;
     }
     .card-container{
@@ -26,7 +26,7 @@
     }
 }
 @media screen and (max-width:959px) {
-    .excercise{
+    .exercise{
         display: block;
     }
     .card-container{

@@ -1,11 +1,11 @@
 import './App.css';
 import Blog from './components/Blog/Blog';
-import Excercise from './components/Excercise/Excercise';
+import Exercise from './components/Exercise/Exercise';
 
 function App() {
   return (
     <div>
-      <Excercise></Excercise>
+      <Exercise></Exercise>
       <Blog></Blog>
     </div>
   );

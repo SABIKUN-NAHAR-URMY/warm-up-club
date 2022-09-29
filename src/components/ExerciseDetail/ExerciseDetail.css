@@ -1,4 +1,4 @@
-.excercise-detail{
+.exercise-detail{
     padding: 30px 0 0 30px;
     position: sticky;
     top: 0;
@@ -38,7 +38,7 @@
     background-color: #572dbb;
     color: white;
 }
-.excercise-time{
+.exercise-time{
     padding: 20px;
     border: 1px solid skyblue;
     border-radius: 10px;

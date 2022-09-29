@@ -1,27 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import ExcerciseCard from '../ExcerciseCard/ExcerciseCard';
-import ExcerciseDetail from '../ExcerciseDetail/ExcerciseDetail';
+import ExerciseCard from '../ExerciseCard/ExerciseCard';
+import ExerciseDetail from '../ExerciseDetail/ExerciseDetail';
 import Header from '../Header/Header';
-import './Excercise.css';
+import './Exercise.css';
 
-const Excercise = () => {
+const Exercise = () => {
     const[cards, setCards] = useState([]);
     const[times , setTimes] = useState([]);
 
     useEffect(()=>{
-        fetch('ExcerciseTypes.json')
+        fetch('ExerciseTypes.json')
         .then(res => res.json())
         .then(data => setCards(data))
     },[])
 
-    const handleClickedTime = (excerciseTime) =>{
-        const newTime = [...times,excerciseTime];
+    const handleClickedTime = (exerciseTime) =>{
+        const newTime = [...times,exerciseTime];
         setTimes(newTime);
     }
 
     return (
-        <div className='excercise'>
-            <div className="excercise-container">
+        <div className='exercise'>
+            <div className="exercise-container">
                 <div className='container'>
                     <Header></Header>
 
@@ -31,10 +31,10 @@ const Excercise = () => {
 
                     <div className='card-container'>
                         {
-                        cards.map(card => <ExcerciseCard 
+                        cards.map(card => <ExerciseCard 
                         key={card.id}
                         card={card}
-                        handleClickedTime = {handleClickedTime}></ExcerciseCard>)
+                        handleClickedTime = {handleClickedTime}></ExerciseCard>)
                         }
                     </div>
 
@@ -42,10 +42,10 @@ const Excercise = () => {
                 
             </div>
             <div className="activity-container">
-                <ExcerciseDetail timeItem={times}></ExcerciseDetail>
+                <ExerciseDetail timeItem={times}></ExerciseDetail>
             </div>
         </div>
     );
 };
 
-export default Excercise;
+export default Exercise;

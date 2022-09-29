@@ -1,11 +1,14 @@
 .single-card{
+    height: 450px;
     border: 1px solid white;
     border-radius: 10px;
     background-color: white;
     position: relative;
+    padding: 10px;
 }
 .single-card img{
     width: 100%;
+    border-radius: 10px;
 }
 .btn-addList{
     width: 75%;

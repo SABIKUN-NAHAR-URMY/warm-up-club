@@ -6,7 +6,7 @@ const ExcerciseCard = (props) => {
     return (
         <div className='single-card'>
             <img src={img} alt="" />
-            <h4>{name}</h4>
+            <h3>{name}</h3>
             <p>{detail}</p>
             <h5>For Age: {age}</h5>
             <h5>Time required: {time}</h5>

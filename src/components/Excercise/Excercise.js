@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ExcerciseCard from '../ExcerciseCard/ExcerciseCard';
+import ExcerciseDetail from '../ExcerciseDetail/ExcerciseDetail';
 import Header from '../Header/Header';
 import './Excercise.css';
 
@@ -33,7 +34,7 @@ const Excercise = () => {
                 
             </div>
             <div className="activity-container">
-                
+                <ExcerciseDetail></ExcerciseDetail>
             </div>
         </div>
     );

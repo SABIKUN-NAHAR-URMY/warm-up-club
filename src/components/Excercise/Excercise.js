@@ -1,11 +1,12 @@
 import React from 'react';
+import Header from '../Header/Header';
 import './Excercise.css';
 
 const Excercise = () => {
     return (
         <div className='excercise'>
             <div className="excercise-container">
-                <h1>Today's excercise</h1>
+                <Header></Header>
             </div>
             <div className="activity-container">
                 <h1>Activity section</h1>

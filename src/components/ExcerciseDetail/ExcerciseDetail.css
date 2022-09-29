@@ -53,6 +53,10 @@
     border-radius: 10px;
     background-color: rgb(234, 226, 251);
 }
+#breakTime{
+    padding-left: 100px;
+}
+
 .activity-completed{
     margin-top: 20px;
     margin-left: 30%;

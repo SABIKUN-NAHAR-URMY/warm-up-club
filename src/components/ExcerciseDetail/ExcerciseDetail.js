@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import image from '../../images/img1.png';
 import './ExcerciseDetail.css'
 
 const ExcerciseDetail = (props) => {
-  let sumTime = 0;
-  for(const item of props.timeItem)
-  {
-   sumTime = sumTime + item;
+    const[breakTime, setBreakTime] = useState([]);
+
+    let sumTime = 0;
+    for(const item of props.timeItem)
+    {
+        sumTime = sumTime + item;
+    };
+
+  const handelClickBreak = (data) =>{
+    const newData = data;
+    setBreakTime(newData);
   }
+
 
     const showToastMessage = () => {
         toast.success('Success Notification !', {
@@ -43,18 +51,18 @@ const ExcerciseDetail = (props) => {
             <div>
                 <h2>Add A Break</h2>
                 <div className='addBreak'>
-                    <p>10<small>s</small></p>
-                    <p>20<small>s</small></p>
-                    <p>30<small>s</small></p>
-                    <p>40<small>s</small></p>
-                    <p>59<small>s</small></p>
+                    <p onClick={()=>handelClickBreak(10)}>10<small>s</small></p>
+                    <p onClick={()=>handelClickBreak(20)}>20<small>s</small></p>
+                    <p onClick={()=>handelClickBreak(30)}>30<small>s</small></p>
+                    <p onClick={()=>handelClickBreak(40)}>40<small>s</small></p>
+                    <p onClick={()=>handelClickBreak(50)}>50<small>s</small></p>
                 </div>
             </div>
 
             <div>
                 <h2>Excercise Details</h2>
                 <h3 className='excercise-time'>Excercise time <span id='sumTime'>{sumTime} seconds</span></h3>
-                <h3 className='break-time'>Break time <span> </span></h3>
+                <h3 className='break-time'>Break time <span id='breakTime'>seconds</span></h3>
             </div>
 
             <button  onClick={showToastMessage} className='activity-completed'>Activity Completed</button>

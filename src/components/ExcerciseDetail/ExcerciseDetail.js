@@ -1,8 +1,15 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import image from '../../images/img1.png';
 import './ExcerciseDetail.css'
 
 const ExcerciseDetail = () => {
+    const showToastMessage = () => {
+        toast.success('Success Notification !', {
+            position: toast.POSITION.TOP_RIGHT
+        });
+    };
     return (
         <div className='excercise-detail'>
             <div className='user'>
@@ -44,8 +51,8 @@ const ExcerciseDetail = () => {
                 <h3 className='break-time'>Break time <span> </span></h3>
             </div>
 
-            <button className='activity-completed'>Activity Completed</button>
-            
+            <button  onClick={showToastMessage} className='activity-completed'>Activity Completed</button>
+            <ToastContainer />
         </div>
     );
 };

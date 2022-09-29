@@ -15,12 +15,12 @@ const Blog = () => {
                         <div>
                         <h3>What is the difference between props and state?</h3>
                         <p><strong>Answer: Props: </strong>The Data is passed from one component to another.It is Immutable (cannot be modified).Props can be used with state and functional components.Props are read-only. <br />
-                    <strong>State: </strong>The Data is passed within the component only.It is Mutable ( can be modified).State can be used only with the state components/class component (Before 16.0). State is both read and write. </p>
+                        <strong>State: </strong>The Data is passed within the component only.It is Mutable ( can be modified).State can be used only with the state components/class component (Before 16.0). State is both read and write. </p>
                         </div>
                         
                         <div>
                         <h3>Where does useEffect except api data load? </h3>
-                    <p><strong>Answer: </strong>It's the solution to many problems: how to fetch data when a component mounts, how to run code when state changes or when a prop changes, how to set up timers or intervals, you name it.</p>
+                        <p><strong>Answer: </strong>useEffect the solution to many problems: how to fetch data when a component mounts, how to run code when state changes or when a prop changes, how to set up timers or intervals.</p>
                         </div>
                     
                 </div>

@@ -20,7 +20,7 @@
 }
 @media screen and (max-width:667px) {
   .questionAnswer{
-    grid-template-columns: repeat(1,1fr);
+   display: block;
     gap: 30px;
   }
 }

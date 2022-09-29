@@ -1,4 +1,16 @@
 .excercise{
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 4fr 2fr;
+}
+.excercise-container{
+    background-color: rgb(234, 226, 251);
+}
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
 }

@@ -1,0 +1,21 @@
+.single-card{
+    height: 400px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    padding-left: 20px;
+    position: relative;
+}
+.btn-addList{
+    width: 75%;
+    background-color: #572dbb;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+}
+.btn-addList:hover{
+    background-color: darkgrey;
+}

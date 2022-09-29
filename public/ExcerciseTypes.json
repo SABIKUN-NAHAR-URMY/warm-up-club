@@ -1,0 +1,51 @@
+[
+    {
+      "id": "1",
+      "name": "Walking",
+      "detail": "Walking is one of the main gaits of terrestrial locomotion among legged animals. Walking is typically slower than running and other gaits.",
+      "age": "20-25",
+      "img": "https://i.insider.com/5eea8a43988ee356890d7de3?width=700",
+      "time": "30s"
+    },
+    {
+      "id": "2",
+      "name": "Swimming",
+      "detail": "Swimming is the self-propulsion of a person through water, or other liquid, usually for recreation, sport, exercise, or survival.",
+      "age": "20-25",
+      "img": "https://i.insider.com/5eea8a43988ee356890d7de3?width=700",
+      "time": "30s"
+    },
+    {
+      "id": "3",
+      "name": "Running",
+      "detail": "Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot.",
+      "age": "20-25",
+      "img": "https://i.insider.com/5eea8a43988ee356890d7de3?width=700",
+      "time": "30s"
+    },
+    {
+      "id": "4",
+      "name": "Cycling",
+      "detail": "Walking is one of the main gaits of terrestrial locomotion among legged animals. Walking is typically slower than running and other gaits.",
+      "age": "20-25",
+      "img": "https://i.insider.com/5eea8a43988ee356890d7de3?width=700",
+      "time": "30s"
+    },
+    {
+      "id": "5",
+      "name": "Yoga",
+      "detail": "Walking is one of the main gaits of terrestrial locomotion among legged animals. Walking is typically slower than running and other gaits.",
+      "age": "20-25",
+      "img": "https://i.insider.com/5eea8a43988ee356890d7de3?width=700",
+      "time": "30s"
+    },
+    {
+      "id": "6",
+      "name": "Push-up",
+      "detail": "Walking is one of the main gaits of terrestrial locomotion among legged animals. Walking is typically slower than running and other gaits.",
+      "age": "20-25",
+      "img": "https://i.insider.com/5eea8a43988ee356890d7de3?width=700",
+      "time": "30s"
+    }
+  ]
+  

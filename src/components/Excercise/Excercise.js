@@ -6,11 +6,18 @@ import './Excercise.css';
 
 const Excercise = () => {
     const[cards, setCards] = useState([]);
+    const[times , setTimes] = useState([]);
+
     useEffect(()=>{
         fetch('ExcerciseTypes.json')
         .then(res => res.json())
         .then(data => setCards(data))
     },[])
+
+    const handleClickedTime = (excerciseTime) =>{
+        const newTime = [...times,excerciseTime];
+        setTimes(newTime);
+    }
 
     return (
         <div className='excercise'>
@@ -26,7 +33,8 @@ const Excercise = () => {
                         {
                         cards.map(card => <ExcerciseCard 
                         key={card.id}
-                        card={card}></ExcerciseCard>)
+                        card={card}
+                        handleClickedTime = {handleClickedTime}></ExcerciseCard>)
                         }
                     </div>
 
@@ -34,7 +42,7 @@ const Excercise = () => {
                 
             </div>
             <div className="activity-container">
-                <ExcerciseDetail></ExcerciseDetail>
+                <ExcerciseDetail timeItem={times}></ExcerciseDetail>
             </div>
         </div>
     );

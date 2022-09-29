@@ -1,51 +1,51 @@
 [
     {
-      "id": "1",
+      "id": 1,
       "name": "Walking",
       "detail": "Walking is one of the main gaits of terrestrial locomotion among legged animals. Walking is typically slower than running and other gaits.",
       "age": "20-25",
       "img": "https://i.ibb.co/HnHdMSL/walk-walking-healthy.jpg",
-      "time": "30s"
+      "time": 30
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Swimming",
       "detail": "Swimming is the self-propulsion of a person through water, or other liquid, usually for recreation, sport, exercise, or survival.",
       "age": "20-25",
       "img": "https://i.ibb.co/P1WwBNt/boulder-swimming-injury-technique-stroke.jpg",
-      "time": "30s"
+      "time": 10
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Running",
       "detail": "Running is a method of terrestrial locomotion allowing humans and other animals to move rapidly on foot.",
       "age": "20-25",
       "img": "https://i.ibb.co/fnS29jG/i-Stock-509684632.jpg",
-      "time": "30s"
+      "time": 10
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Cycling",
       "detail": "Cycling, also, when on a two-wheeled bicycle, called bicycling or biking, is the use of cycles for transport, recreation, exercise or sport.",
       "age": "20-25",
       "img": "https://i.ibb.co/2hH6tLC/IT-band-300x200.jpg",
-      "time": "30s"
+      "time": 20
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Yoga",
       "detail": "Yoga is a group of physical, mental, and spiritual practices or disciplines and aim to control and still the mind.",
       "age": "20-25",
       "img": "https://i.ibb.co/GssqjDB/photo-1544367567-0f2fcb009e0b.jpg",
-      "time": "30s"
+      "time": 10
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Push-up",
       "detail": "Muscle strengthening activities are counted in repetitions and sets. A repetition is one complete movement of an activity, like a bicep curl, sit-up or push-up.",
       "age": "20-25",
       "img": "https://i.ibb.co/2ZgQHqH/cn-Pg-SLG9s-Zpp-Vd-Eei9-Mj-UD-1200-80.jpg",
-      "time": "30s"
+      "time": 10
     }
   ]
   

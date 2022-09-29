@@ -4,7 +4,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import image from '../../images/img1.png';
 import './ExcerciseDetail.css'
 
-const ExcerciseDetail = () => {
+const ExcerciseDetail = (props) => {
+  let sumTime = 0;
+  for(const item of props.timeItem)
+  {
+   sumTime = sumTime + item;
+  }
+
     const showToastMessage = () => {
         toast.success('Success Notification !', {
             position: toast.POSITION.TOP_RIGHT
@@ -47,7 +53,7 @@ const ExcerciseDetail = () => {
 
             <div>
                 <h2>Excercise Details</h2>
-                <h3 className='excercise-time'>Excercise time <span> </span></h3>
+                <h3 className='excercise-time'>Excercise time <span id='sumTime'>{sumTime} seconds</span></h3>
                 <h3 className='break-time'>Break time <span> </span></h3>
             </div>
 

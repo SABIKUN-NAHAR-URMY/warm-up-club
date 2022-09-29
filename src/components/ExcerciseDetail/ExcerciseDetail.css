@@ -44,6 +44,9 @@
     border-radius: 10px;
     background-color: rgb(234, 226, 251);
 }
+#sumTime{
+    padding-left: 100px;
+}
 .break-time{
     padding: 20px;
     border: 1px solid skyblue;
